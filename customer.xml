@@ -1,0 +1,18 @@
+<CustomerInfo>     <!-- root element -->     
+ 	<Customer id="c101">     <!-- Child ELEMENT -->
+			<Name>Rishabh</Name>
+			<PName>eraser</PName>
+			<Qty>5</Qty>
+			<Price>5</Price>
+			<TotalPrice>25</TotalPrice>
+	</Customer>
+	
+	<Customer id="c102">  <!-- Child ELEMENT -->
+			<Name>Mayur</Name>
+			<PName>pencil</PName>
+			<Qty>4</Qty>
+			<Price>5</Price>
+			<TotalPrice>20</TotalPrice>
+	</Customer> 
+
+</CustomerInfo>	

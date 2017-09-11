@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="CustomerInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Customer" type="CustomerType" minOccurs="0" maxOccurs="4"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="CustomerType">
+<xs:sequence>
+	<xs:element name="Name" type="xs:string"/>
+	<xs:element name="PName" type="xs:string"/>
+	<xs:element name="Qty" type="xs:integer"/>
+	<xs:element name="Price" type="commonType"/>
+	<xs:element name="TotalPrice" type="commonType"/>
+</xs:sequence>
+
+<xs:attribute ref="id" use = "optional"/>
+
+</xs:complexType>
+
+<xs:attribute name="id">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+		<xs:pattern value="[c][0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:attribute>
+
+<xs:element name="Name">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Za-z]{3,15}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="Pname">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+		<xs:enumeration value="eraser"/>
+		<xs:enumeration value="pencil"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="Qty">
+	<xs:simpleType>
+		<xs:restriction base="xs:positiveInteger">
+		<xs:minInclusive value="1"/>
+		<xs:maxInclusive value="10"/>
+		
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+	<xs:simpleType name="commonType">
+		<xs:restriction base="xs:float">
+		<xs:minInclusive value="0"/>
+		<xs:maxInclusive value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

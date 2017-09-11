@@ -1,0 +1,31 @@
+<EmployeeInfo>     <!-- root element -->     
+ 	<Employee id='101'>     <!-- Child ELEMENT -->
+			<Name>Rishabh</Name>
+			<Gender>Male</Gender>
+			<Desig>Programmer</Desig>
+			<DeptName>Development</DeptName>
+			<Salary>25000</Salary>
+	</Employee>
+	<Employee id="102">  <!-- Child ELEMENT -->
+			<Name>Mayuri</Name>
+			<Gender>Female</Gender>
+			<Desig>Designer</Desig>
+			<DeptName>Development</DeptName>
+			<Salary>22000</Salary>
+	</Employee> 
+	<Employee id="103">  <!-- Child ELEMENT -->
+			<Name>Akash</Name>
+			<Gender>Male</Gender>
+			<Desig>Tester</Desig>
+			<DeptName>Testing</DeptName>
+			<Salary>22000</Salary>
+	</Employee>
+	<Employee id="104">   <!-- Child ELEMENT -->
+			<Name>Akshay</Name>
+			<Gender>Male</Gender>
+			<Desig>Programmer</Desig>
+			<DeptName>Development</DeptName>
+			<Salary>25000</Salary>
+			</Employee>
+
+</EmployeeInfo>	
